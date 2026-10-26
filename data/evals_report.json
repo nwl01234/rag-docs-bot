@@ -1,0 +1,13 @@
+{
+ "hit_rate_at_3": {
+  "golden_size": 6,
+  "k": 3,
+  "hit_rate": 1.0,
+  "judgement": "extractive Matcher wins: позиции из базы, без генерации"
+ },
+ "ab_test": {
+  "variant_a_synonyms": 1.0,
+  "variant_b_plain": 1.0,
+  "verdict": "A (синонимы) держит покрыть разброс формулировок"
+ }
+}

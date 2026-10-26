@@ -21,3 +21,10 @@ def health():
 @app.post("/api/ask")
 def ask(q: Q):
     return answer(q.q, INDEX)
+
+
+@app.get("/api/eval")
+def eval_quality():
+    """Оценка качества поиска: golden hit-rate@3 + offline A/B синонимы vs plain."""
+    from core import eval as rag_eval
+    return rag_eval.eval_report()
